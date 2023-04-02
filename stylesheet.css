@@ -5,14 +5,13 @@
 }
 
 header{
-  height:50px;
-  width:100%;
-  background-color:#FF9A4B;
+  height: 50px;
+  background-color: #FF9A4B;
 }
 
 main{
-  width:960px;
-  margin:50px  auto;
+  width: 960px;
+  margin: 50px  auto;
   display: flex;
 }
 
@@ -29,41 +28,65 @@ main{
 }
 
 .image1{
-  height:150px;
+  height: 150px;
   background-image: url(img/flow01.png);
-  background-position:bottom;
+  background-position: bottom;
   background-size: cover;
 }
 
 .image2{
   height:150px;
   background-image: url(img/flow02.png);
-  background-position:bottom;
+  background-position: bottom;
   background-size: cover;
 }
 
 .image3{
   height:150px;
   background-image: url(img/flow03.png);
-  background-position:bottom;
+  background-position: bottom;
   background-size: cover;
 }
 
 .step{
-  position:absolute;
-  top:0;
-  left:0;
-  color:#fff;
-  background-color:#FF9A4B;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background-color: #FF9A4B;
 }
 
 .title{
-  margin-top:15px;
-  margin-bottom:5px;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 footer{
   height: 50px;
-  width:100%;
-  background-color:#AAAAAA;
+  background-color: #AAAAAA;
+}
+
+@media screen and (max-width: 768px) {
+  header{
+    width: 100%;
+  }
+
+  main{
+    width: 100%;
+    margin: 50px 0;
+    display: block;
+  }
+
+  .box{
+    width: 90%;
+    margin: 0 5% 20px 5%;
+  }
+
+  .box:last-child{
+    margin-bottom: 0px;
+  }
+  footer{
+    width: 100%;
+  }
+
 }
